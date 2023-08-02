@@ -14,7 +14,7 @@ const NewExpense = (props) => {
     setIsEditing(false);
   };
 
-  const startEdditingHandler = () => {
+  const startEditingHandler = () => {
     setIsEditing(true);
   };
 
@@ -25,7 +25,7 @@ const NewExpense = (props) => {
   return (
     <div className="new-expense">
       {!isEditing && (
-        <button onClick={startEdditingHandler}>Add new Expense</button>
+        <button onClick={startEditingHandler}>Add new Expense</button>
       )}
       {isEditing && (
         <ExpenseForm
