@@ -4,7 +4,7 @@ import "./ChartBar.css";
 const ChartBar = (props) => {
   let barFillHeigh = "0%";
 
-  if (props.max > 0) {
+  if (props.maxValue > 0) {
     barFillHeigh = Math.round((props.value / props.maxValue) * 100) + "%";
   }
 
